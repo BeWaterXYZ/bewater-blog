@@ -1,0 +1,19 @@
+<div class="absolute inset-0 flex flex-col px-4">
+    <div class="flex-shrink-0 h-20 border-b border-solid border-gray-dark"></div>
+    <div class="flex-grow overflow-y-auto">
+        <div class="py-10 border-b border-solid border-gray-dark">
+            <div class="flex flex-col gap-5 flex-nowrap text-sm">
+                <% for (let link in site.data.menu) { %>
+                    <a href="<%= site.data.menu[link] %>" class="flex gap-1 items-center group"><div class="w-3 h-3 bg-gray-600 group-hover:bg-gray-400 <% if (link=="Venture Studio") { %>!bg-blue<% } %>"></div><%= link %></a>
+                <% } %>
+            </div>
+        </div>
+        <div class="py-10">
+            <div class="flex flex-col gap-5 flex-nowrap text-sm">
+                <% for (let link in site.data.social) { %>
+                    <div><a href="<%= site.data.social[link] %>"><%= link %></a></div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</div>

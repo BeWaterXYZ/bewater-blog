@@ -1,0 +1,40 @@
+<div class="px-4 md:px-5 grid grid-cols-12">
+    <div class="hidden md:block text-sm col-span-2 pt-20 md:pt-40 pb-10 h-svh sticky top-0 overflow-y-auto">
+        <%- partial('../_component/postNavbar') %>
+    </div>
+    <div class="col-span-12 md:col-start-2 md:col-span-9 lg:col-start-4 lg:col-span-6 max-w-[1000px] py-20 md:py-40">
+        <div class="flex flex-col gap-5">
+            <div class="flex flex-col gap-2">
+                <div class="text-xs">
+                    <%- list_categories(page.categories, {show_count: false, class: 'link-gray-black link-underline-hover category', style: 'none', separator: ','}) %>
+                </div>
+                <h1>
+                    <%- page.title %>
+                </h1>
+                <div class="text-xs">
+                    <a href="<%- url_for(page.path) %>" class="link-underline-hover"><span><%- page.date.format("L") %></span></a><%if (post_author(page)) { %><span class="px-1">|</span><span>By <%- Object.values(page.author).map(author => author.name).join(', ') %></span><% } %>
+                </div>
+            </div>
+            <% if (page.photos && page.photos.length){ %>
+            <div class="flex flex-col gap-2">
+                <% for (let photo of page.photos){ %>
+                    <img src="<%- url_for(photo) %>">
+                <% } %>
+                </div>
+            <% } %>
+        </div>
+        <div class="pt-5 md:pt-10 content font-serif leading-relaxed">
+            <%- page.content %>
+        </div>
+        <% if (post_author(page)) { %>
+            <div class="my-5 md:my-10">
+                <div class="mb-4 text-sm font-bold">Written By</div>
+                <div class="flex flex-col gap-5">
+                    <% for(let author of page.author ){ %>
+                        <%- partial("../_component/aboutAuthor", {author}) %>
+                    <% } %>
+                </div>
+            </div>
+        <% } %>
+    </div>
+</div>

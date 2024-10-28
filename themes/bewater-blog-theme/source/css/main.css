@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital, t@0,100..800;1,100..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body > div {
+        font-family: 'JetBrains Mono';
+    }
+
+    h6,
+    h5,
+    h4,
+    h3,
+    h2,
+    h1 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-weight: 500;
+        line-height: 1.25;
+        color: inherit;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .content ol {
+        @apply list-decimal list-inside mb-4;
+    }
+
+    .content ul {
+        @apply list-disc list-inside mb-4;
+    }
+
+    dt {
+        font-weight: 700;
+    }
+
+    dd {
+        margin-bottom: 0.5rem;
+        margin-left: 1rem;
+    }
+
+    pre,
+    code,
+    kbd,
+    samp {
+        font-family: 'Jetbrains Mono';
+        font-size: 1em;
+    }
+
+    pre {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        overflow: auto;
+        font-size: 0.875em;
+    }
+
+    pre code {
+        font-size: inherit;
+        color: inherit;
+        word-break: normal;
+    }
+
+    code {
+        font-size: 0.875em;
+        color: #d63384;
+        word-wrap: break-word;
+    }
+
+    kbd {
+        padding: 0.1875rem 0.375rem;
+        font-size: 0.875em;
+        color: #fff;
+        background-color: #212529;
+        border-radius: 0.25rem;
+    }
+
+    figure {
+        margin: 0 0 1rem;
+    }
+
+    p a {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
+
+    blockquote {
+        border-left: 2px solid black;
+    }
+
+    blockquote > * {
+        margin-inline-start: 2rem;
+    }
+}
+
+@layer components {
+    .button {
+        @apply border rounded px-2 py-1 text-xs leading-normal text-center align-middle;
+    }
+
+    .button.current {
+        background-color: #00ffffe6;
+    }
+
+    ol.toc {
+        @apply flex flex-col gap-2 list-disc list-inside font-medium;
+    }
+
+    ol.toc ol {
+        list-style: circle inside;
+        @apply font-normal;
+    }
+
+    ol.toc ol ol {
+        list-style: square inside;
+        @apply font-light;
+    }
+}
+
+@layer utilities {
+    .link-gray-black {
+        @apply text-gray-500 hover:text-inherit;
+    }
+
+    .link-underline-hover {
+        @apply hover:underline hover:decoration-solid hover:decoration-1 hover:underline-offset-2;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 48;
+    }
+}

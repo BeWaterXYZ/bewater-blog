@@ -1,0 +1,23 @@
+<footer class="px-5 py-10 bg-latenight text-gray-300 flex flex-col gap-[60px]">
+    <div class="grid grid-cols-12 gap-y-10">
+        <div class="col-span-12 md:col-span-3 col-start-1">
+            <%- partial("../_partial/footerIcon") %>
+        </div>
+        <div class="col-span-12 md:col-start-4 flex flex-col gap-10">
+            <div class="grid md:grid-cols-3 gap-y-2">
+                <% for (let link in site.data.menu) { %>
+                    <div>
+                        <a href="<%= site.data.menu[link] %>"><%= link %></a>
+                    </div>
+                <% } %>
+            </div>
+            <div class="grid md:grid-cols-3 gap-y-2">
+                <% for (let link in site.data.social) { %>
+                    <div>
+                        <a href="<%= site.data.social[link] %>"><%= link %></a>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</footer>
