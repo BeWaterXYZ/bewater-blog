@@ -1,0 +1,32 @@
+name: GitHub Actions Build and Deploy
+on:
+    push:
+        branches: ['main']
+    pull_request:
+        branches: ['main']
+
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+
+            - name: node-v16
+              uses: actions/setup-node@v3
+              with:
+                  node-version: '16'
+
+            - name: Install and Build
+              run: |
+                  npm install
+                  npm run build
+                  cd ..
+
+            - name: Deploy
+              uses: JamesIves/github-pages-deploy-action@4.1.9
+              with:
+                  branch: gh-pages
+                  FOLDER: public
+                  token: ${{ secrets.ACCESS_TOKEN }}
+                  CLEAN: true
