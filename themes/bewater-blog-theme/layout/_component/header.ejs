@@ -1,0 +1,32 @@
+<header>
+    <div class="hidden md:block fixed top-5 px-5 z-50 w-full">
+        <div class="grid grid-cols-12 items-center h-12">
+            <div class="col-start-1">
+                <%- partial("../_partial/headerIcon") %>
+                <a href="https://bewater.xyz">
+                    <img width="130" height="37.5" src="/css/images/bewater-logo-black.svg">
+                </a>
+            </div>
+            <div class="md:col-start-5 lg:col-start-4 col-span-12">
+                <div class="animate__animated animate__faster animate-menu-md w-fit py-[10px] px-4 -mx-4 bg-white border-gray-neutral">
+                    <div class="h-10 flex flex-nowrap items-center gap-8 justify-start">
+                        <% for (let link in site.data.menu) { %>
+                            <a href="<%= site.data.menu[link] %>" class="uppercase hover:text-blue transition-colors duration-300 <% if (link=="Venture Studio") { %>text-blue<% } %>"><%= link %></a>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block md:hidden animate__animated animate__faster animate-menu fixed z-50 w-full h-20 bg-white">
+        <div class="relative top-4 px-4">
+            <div class="flex justify-between items-center h-12">
+                <a href="https://bewater.xyz">
+                    <img width="130" height="37.5" src="/css/images/bewater-logo-black.svg">
+                </a>
+                <button class="mobile-nav-switch"><span class="material-symbols-outlined align-middle">menu</span></button>
+            </div>
+        </div>
+    </div>
+    <div class="fixed inset-0 z-40 mobile-nav bg-white hidden"><%- partial("mobileNav")%></div>
+</header>

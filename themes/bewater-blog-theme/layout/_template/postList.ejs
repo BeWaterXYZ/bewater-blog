@@ -1,0 +1,25 @@
+<div class="px-4 md:px-5 grid grid-cols-12">
+    <div class="hidden md:block text-sm col-span-2 pt-20 md:pt-40 pb-10 h-svh sticky top-0 overflow-y-auto">
+        <%- partial('../_component/categoryNavbar', {currentCategory}) %>
+    </div>
+    <div class="md:col-start-5 md:col-span-7 lg:col-start-4 lg:col-span-6 col-span-12 max-w-[1000px] py-20 md:py-40">
+        <div class="text-sm flex flex-nowrap justify-between items-start">
+            <div><%- currentCategory %></div>
+            <div class="flex flex-nowrap gap-2">
+                <%- paginator({prev_text: '<', next_text: '>', force_prev_next: true, page_class:"button", current_class:"current", prev_class:"button", next_class:"button"}) %>
+            </div>
+        </div>
+        <div class="flex flex-col gap-[60px] pt-5 pb-10">
+            <% page.posts.each( post => { %>
+                <%- partial('../_component/postPreview', { post }) %>
+            <% }) %>
+        </div>
+        <div class="flex flex-nowrap gap-2">
+            <%- paginator({prev_text: '<', next_text: '>', force_prev_next: true, page_class:"button", current_class:"current", prev_class:"button", next_class:"button"}) %>
+        </div>
+        <div class="block md:hidden text-sm w-fit md:left-4">
+            <div class="uppercase font-bold mt-20 mb-2">Categories</div>
+            <%- partial('../_component/categoryNavbar', {currentCategory}) %>
+        </div>
+    </div>
+</div>

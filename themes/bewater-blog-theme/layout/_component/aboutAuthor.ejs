@@ -1,0 +1,35 @@
+<div class="md:p-5 md:border md:border-solid md:boder-gray-border">
+    <div class="grid md:grid-cols-5 gap-5 text-sm">
+        <% if (author.photo){ %>
+        <div class="md:col-span-2 overflow-hidden aspect-square block w-full">
+            <%- image_tag(author.photo) %>
+        </div>
+        <% } %>
+        <div class="md:col-span-3">
+            <div class="flex flex-col gap-2">
+                <div class="flex flex-col gap-[10px] md:gap-5">
+                    <div class="flex flex-col gap-[5px]">
+                        <div><%- author.name %></div>
+                        <% if (author.title){ %>
+                        <div><%- author.title %></div>
+                        <% } %> <% if (author.social){ %>
+                        <div class="flex gap-2">
+                            <% for (let social in author.social){ %>
+                            <a
+                                class="button hover:current"
+                                href="<%- author.social[social] %>"
+                            >
+                                <%- social %></a
+                            >
+                            <% } %>
+                        </div>
+                        <% } %>
+                    </div>
+                    <% if (author.about) {%>
+                    <div><%- author.about %></div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
