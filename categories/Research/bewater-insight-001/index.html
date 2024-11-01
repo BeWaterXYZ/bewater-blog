@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>USDe经济模型与潜在风险解析 | BeWater Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/prism.css">
+
+    
+<script src="/js/animation.js"></script>
+<script src="/js/mobileNav.js"></script>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+    <div class="min-h-[100vh] flex flex-col">
+        <header>
+    <div class="hidden md:block fixed top-5 px-5 z-50 w-full">
+        <div class="grid grid-cols-12 items-center h-12">
+            <div class="col-start-1">
+                
+                <a target="_blank" rel="noopener" href="https://bewater.xyz">
+                    <img width="130" height="37.5" src="/css/images/bewater-logo-black.svg">
+                </a>
+            </div>
+            <div class="md:col-start-5 lg:col-start-4 col-span-12">
+                <div class="animate__animated animate__faster animate-menu-md w-fit py-[10px] px-4 -mx-4 bg-white border-gray-neutral">
+                    <div class="h-10 flex flex-nowrap items-center gap-8 justify-start">
+                        
+                            <a target="_blank" rel="noopener" href="https://build.bewater.xyz/campaigns" class="uppercase hover:text-blue transition-colors duration-300 ">Campaigns</a>
+                        
+                            <a target="_blank" rel="noopener" href="https://bewater.xyz/venturestudio" class="uppercase hover:text-blue transition-colors duration-300 text-blue">Venture Studio</a>
+                        
+                            <a href="/" class="uppercase hover:text-blue transition-colors duration-300 ">Blog</a>
+                        
+                            <a target="_blank" rel="noopener" href="https://docs.bewater.xyz/guide/" class="uppercase hover:text-blue transition-colors duration-300 ">Docs</a>
+                        
+                            <a target="_blank" rel="noopener" href="https://build.bewater.xyz/host" class="uppercase hover:text-blue transition-colors duration-300 ">Host</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block md:hidden animate__animated animate__faster animate-menu fixed z-50 w-full h-20 bg-white">
+        <div class="relative top-4 px-4">
+            <div class="flex justify-between items-center h-12">
+                <a target="_blank" rel="noopener" href="https://bewater.xyz">
+                    <img width="130" height="37.5" src="/css/images/bewater-logo-black.svg">
+                </a>
+                <button class="mobile-nav-switch"><span class="material-symbols-outlined align-middle">menu</span></button>
+            </div>
+        </div>
+    </div>
+    <div class="fixed inset-0 z-40 mobile-nav bg-white hidden"><div class="absolute inset-0 flex flex-col px-4">
+    <div class="flex-shrink-0 h-20 border-b border-solid border-gray-dark"></div>
+    <div class="flex-grow overflow-y-auto">
+        <div class="py-10 border-b border-solid border-gray-dark">
+            <div class="flex flex-col gap-5 flex-nowrap text-sm">
+                
+                    <a target="_blank" rel="noopener" href="https://build.bewater.xyz/campaigns" class="flex gap-1 items-center group"><div class="w-3 h-3 bg-gray-600 group-hover:bg-gray-400 "></div>Campaigns</a>
+                
+                    <a target="_blank" rel="noopener" href="https://bewater.xyz/venturestudio" class="flex gap-1 items-center group"><div class="w-3 h-3 bg-gray-600 group-hover:bg-gray-400 !bg-blue"></div>Venture Studio</a>
+                
+                    <a href="/" class="flex gap-1 items-center group"><div class="w-3 h-3 bg-gray-600 group-hover:bg-gray-400 "></div>Blog</a>
+                
+                    <a target="_blank" rel="noopener" href="https://docs.bewater.xyz/guide/" class="flex gap-1 items-center group"><div class="w-3 h-3 bg-gray-600 group-hover:bg-gray-400 "></div>Docs</a>
+                
+                    <a target="_blank" rel="noopener" href="https://build.bewater.xyz/host" class="flex gap-1 items-center group"><div class="w-3 h-3 bg-gray-600 group-hover:bg-gray-400 "></div>Host</a>
+                
+            </div>
+        </div>
+        <div class="py-10">
+            <div class="flex flex-col gap-5 flex-nowrap text-sm">
+                
+                    <div><a target="_blank" rel="noopener" href="https://x.com/bewaterofficial">X</a></div>
+                
+                    <div><a target="_blank" rel="noopener" href="https://discord.gg/gvsNjn8FbS">Discord</a></div>
+                
+                    <div><a target="_blank" rel="noopener" href="https://t.me/+J3aIWvxCKvAxZTE1">Telegram</a></div>
+                
+                    <div><a target="_blank" rel="noopener" href="https://medium.com/@support_25102">Medium</a></div>
+                
+            </div>
+        </div>
+    </div>
+</div></div>
+</header>
+        <section id="main"><div class="px-4 md:px-5 grid grid-cols-12">
+    <div class="hidden md:block text-sm col-span-2 pt-20 md:pt-40 pb-10 h-svh sticky top-0 overflow-y-auto">
+        <div>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E2%83%A3%EF%B8%8F-USDe%E7%95%8C%E5%AE%9A%EF%BC%9A%E8%B6%B3%E9%A2%9D%E6%8A%B5%E6%8A%BC%E7%9A%84%E5%8D%8A%E4%B8%AD%E5%BF%83%E5%8C%96%E7%A8%B3%E5%AE%9A%E5%B8%81"><span class="toc-text">1⃣️ USDe界定：足额抵押的半中心化稳定币</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E2%83%A3%EF%B8%8F-%E6%8A%B5%E6%8A%BC%E7%89%A9%E4%BB%B7%E5%80%BC%E5%88%86%E6%9E%90"><span class="toc-text">2⃣️ 抵押物价值分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E2%83%A3%EF%B8%8F-%E7%9C%9F%E6%AD%A3%E7%9A%84%E9%A3%8E%E9%99%A9%E5%9C%A8%E5%93%AA%E9%87%8C%EF%BC%9F"><span class="toc-text">3⃣️ 真正的风险在哪里？</span></a></li></ol>
+</div>
+    </div>
+    <div class="col-span-12 md:col-start-2 md:col-span-9 lg:col-start-4 lg:col-span-6 max-w-[1000px] py-20 md:py-40">
+        <div class="flex flex-col gap-5">
+            <div class="flex flex-col gap-2">
+                <div class="text-xs">
+                    <a class="link-gray-black link-underline-hover category-link" href="/categories/Research/">Research</a>
+                </div>
+                <h1>
+                    USDe经济模型与潜在风险解析
+                </h1>
+                <div class="text-xs">
+                    <a href="/categories/Research/bewater-insight-001/" class="link-underline-hover"><span>04/10/2024</span></a><span class="px-1">|</span><span>By BeWater Giga-Brain, 0xLoki</span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="pt-5 md:pt-10 content font-serif leading-relaxed">
+            <p>本文深入分析了目前最具争议性的稳定币——USDe，探讨了其稳定币的属性、背后抵押物的价值以及核心风险点。</p>
+<p>Let’s Dive Deep into the Water!</p>
+<p><img src="/categories/Research/bewater-insight-001/640.webp" alt="Image"></p>
+<h3 id="1⃣️-USDe界定：足额抵押的半中心化稳定币"><a href="#1⃣️-USDe界定：足额抵押的半中心化稳定币" class="headerlink" title="1⃣️ USDe界定：足额抵押的半中心化稳定币"></a>1⃣️ USDe界定：足额抵押的半中心化稳定币</h3><p>稳定币有许多种分类方式，例如：</p>
+<p>（1）足额抵押和非足额抵押</p>
+<p>（2）中心化托管和非中心化托管</p>
+<p>（3）链上发行与中心化机构发行</p>
+<p>（4）需许可和无需许可</p>
+<p>其中还会存在一些重叠和变化，例如过去我们认为AMPL、UST等算法稳定币供应和流通完全由算法调节的稳定币。按照此定义，大部分稳定币属于非足额抵押稳定币，但也有例外，例如Lumiterra的LUAUSD，尽管其铸造和销毁价格是由算法调节，但协议金库提供了不少于LUAUSD锚定价值的抵押物（USDT &amp; USDC），LUAUSD兼具算法稳定币和足额抵押稳定币两重属性。</p>
+<p>另一个例子是DAI，当DAI的抵押物为100%的链上资产时，DAI属于非中心化托管稳定币，但引入RWA以后，部分抵押物事实上是由现实实体控制的，DAI转变为中心化和非中心化混合托管的稳定币。</p>
+<p>基于此，我们可以剥离掉过于复杂的分类，抽象成是否有足额抵押、是否无需许可发行、是否去托管三个核心指标。对比来看，USDe和其他常见稳定币在这三项属性上均有部分差异。如果我们认为【去中心化】需要同时满足【无需许可发行】和【去托管】两个条件，那么USDe是不符合的，因此将其归类为【足额抵押的半中心化稳定币】是合适的。</p>
+<p><img src="/categories/Research/bewater-insight-001/641.webp" alt="Image"></p>
+<h3 id="2⃣️-抵押物价值分析"><a href="#2⃣️-抵押物价值分析" class="headerlink" title="2⃣️ 抵押物价值分析"></a>2⃣️ 抵押物价值分析</h3><p>第一个问题是USDe是否有足额抵押物，答案很显然是肯定的。正如项目文档所述，USDe 的抵押物是加密资产和相应的空头期货头寸的合成资产作为抵押物。</p>
+<p>l 合成资产价值  &#x3D; 现货价值 + 空头期货头寸价值</p>
+<p>l 初始状态下，现货价值 &#x3D; X，期货头寸价值 &#x3D; 0，假设基差为Y</p>
+<p>l 抵押物价值 &#x3D; X + 0</p>
+<p>l 假设一定时间后现货价格上涨a美元，而期货头寸价值上涨了b美元（a、b可以为负）头寸价值 &#x3D; X + a -b &#x3D; X + (a-b)，基差变为Y + ΔY，其中 ΔY &#x3D; (a-b)</p>
+<p>可以看出，如果ΔY不变，那么头寸的内在价值不会变动，如果ΔY为正数，那么头寸的内在价值会上涨，反之则下跌。另外对于交割合约来说，基差初始状态下一般为负数，而到交割日时基差会逐步变为0（不考虑交易摩擦），这也就意味着ΔY必然是正数，因此如果合成的时候基差为Y，合成头寸在交割日时合成头寸价值会高于初始状态。</p>
+<p>持有现货，做空期货的资产组合也被称作“期现套利”，这种套利结构本身是没有风险的（但有外部风险），按照当前数据，构造这种投资组合大约能够获取18%左右的低风险年化收益。</p>
+<p><img src="/categories/Research/bewater-insight-001/642.webp" alt="Image"></p>
+<p>我们回到Ethena，关于是使用交割合约还是永续合约我并没有在官网找到准确界定（考虑到交易深度问题，永续合约的概率比较大），但公布了抵押物的链上地址和CEX分布。</p>
+<p><img src="/categories/Research/bewater-insight-001/643.webp" alt="Image"></p>
+<p>从短期来看，这两种方式会有一些差异，交割合约会提供一个更加“稳定且可预测”的收益率，且到期收益始终为正。而永续合约则是一个波动利率的产品， 日利率在特定情况下也可能为负。但从经验来看，永续合约的套利历史回报会略高于交割合约，且二者都为正：</p>
+<p>1）Delta中性的期货空投本质是出借资金，出借资金不可能长时间保持0利率或者负利率，而且这种头寸堆叠了USDT风险、中心化交易所风险， <strong>所以必要收益率＞美元的无风险收益率</strong> 。</p>
+<p>2）永续合约需要承受可变的到期收益率，需要支付额外的风险溢价。</p>
+<p><strong>基于此，担心“USDe”资不抵债或者将USDe类比为UST是完全错误的。</strong> 按照文章开始介绍的抵押物风险评估框架，USDe目前的核心&#x2F;狭义抵押系数为101.62%，将ENA15.7亿美元的流通市值纳入考虑以后，广义抵押系数约可以达到178%。</p>
+<p><img src="/categories/Research/bewater-insight-001/644.webp" alt="Image"></p>
+<p><strong>【潜在负费率将导致USDe抵押物缩水】</strong> 也不是大问题。依据大数定理，只要时间足够长，频率必然会收敛于概率，USDe抵押物长期会保持收敛于平均资金费率的增长率。</p>
+<p><img src="/categories/Research/bewater-insight-001/645.webp" alt="Image"></p>
+<p>换个更加通俗的说法：你可以无限次地从扑克牌中抽一张，如果抽到大小王会损失1美元，抽到其他52张你可以赚1美元。在本金100美元的情况下，你需要担心因为抽到太多大小王破产吗？直接看数据更加直观，过去6个月中平均合约费率仅有两次处于0%以下水平，期现套利的历史胜率远高于抽扑克牌。</p>
+<p><img src="/categories/Research/bewater-insight-001/646.webp" alt="Image"></p>
+<h3 id="3⃣️-真正的风险在哪里？"><a href="#3⃣️-真正的风险在哪里？" class="headerlink" title="3⃣️ 真正的风险在哪里？"></a>3⃣️ 真正的风险在哪里？</h3><p><strong>1.市场容量风险</strong></p>
+<p>现在我们已经明确，抵押物风险并不值得担心。但这并不意味着没有其他风险。最值得关注的是合约市场容量对Ethena的潜在限制。</p>
+<p>第一个风险是流动性风险。目前USDe的发行量约20.4亿美元，其中ETH和LST合计约12.4亿美元，这也就意味着完全对冲情况下需要开设12.4亿美元的空头头寸，所需的头寸规模于USDe的规模成正比。</p>
+<p><img src="/categories/Research/bewater-insight-001/647.webp" alt="Image"></p>
+<p>当前Binance的ETH永续合约持仓规模约30亿美元，Ethena USDT储备金中的78%存放在了Binance，假设资金的利用是均匀的，这意味着Ethena需要在Binance 开设 20.4亿*61%*78%&#x3D;9.7亿名义价值的空头头寸，已经占到了持仓量的32.3%。</p>
+<p>Ethena的持仓规模在Binance或者其他衍生品交易所占据过高的比例会产生很多负面影响，包括：</p>
+<p>1）可能导致交易摩擦变大</p>
+<p>2）无法应对短时间内的大规模赎回</p>
+<p>3）USDe推高空头头寸的供给，导致费率的下降，影响收益率</p>
+<p>尽管通过一些机制化的设计可能能够缓释风险，例如设置基于时间的铸造&#x2F;销毁上限和动态费率（LUNA就引入了这一机制），但更好的方法还是不把自己至于危险之中。</p>
+<p>按照这些数据，Binance + ETH交易对的组合能给Ethena提供的市场容量已经非常接近极限了。但还可以通过引入多币种、多交易所来突破这个极限。按照Tokeninsight数据，Binance占据了衍生品交易市场50.1%的份额，按照Coinglass数据，除ETH以外，Top10币种在Binance的合约持仓总量约为ETH的三倍，按照这两个数据估算：</p>
+<p>USDe市场容量理论上限 &#x3D; 20.4 （628&#x2F;800）*60%&#x2F; 4 &#x2F; 50.1% &#x3D; 128亿美元</p>
+<p>坏消息是USDe是有容量上限的，好消息是离上限还有500%的增长空间。</p>
+<p>基于这两个上限我们可以将USDe的规模增长分为三个阶段：</p>
+<p>（1）0-20亿：通过Binance 上ETH的市场达成这一规模</p>
+<p>（2）20亿-128亿：需要将抵押品拓展到市场深度靠前的主流币 + 充分利用其他交易所的市场容量</p>
+<p>（3）128亿以上：需要依靠Crypto市场本身的增长 + 引入额外的抵押物管理方式（例如RWA、借贷市场头寸）</p>
+<p>需要注意的是，如果USDe希望真正Flip掉中心化稳定币，至少需要先超过USDC成为第二大稳定币，后者目前发行总量约346亿美元，是USDe第二阶段潜在容量上限的2.7倍，将会是一个比较大的挑战。</p>
+<p><img src="/categories/Research/bewater-insight-001/648.webp" alt="Image"></p>
+<p><strong>2. 托管风险</strong></p>
+<p>Ethena另一个争议的点在于协议的资金由第三方机构托管。这是基于目前市场环境的妥协。Coinglass数据显示，dydx的BTC合约持仓总量为1.19亿美元，仅有Binance的1.48%，Bybit的2.4%。所以通过中心化交易所管理头寸对Ethena来说是无法避免的。</p>
+<p><img src="/categories/Research/bewater-insight-001/649.webp" alt="Image"></p>
+<p>但需要指出的是，Ethena采用了“Off-Exchange Settlement”的托管方式。简单来说通过这种方式管理的资金不会真正进入交易所，而是被转移至一个专门地址进行管理，通常由委托人（即Ethena）、托管人（第三方托管机构）和交易所三方共管，同时交易所根据托管资金的规模，在交易所内生成对应的额度，这些资金只能用于交易，不能被转移；事后再根据损益情况进行结算。</p>
+<p>这种机制最大的好处恰恰是【消除了中心化交易所的单点风险】，因为交易所始终没有真正掌控这笔资金，至少需要3方中的2方签名才可以转移。在托管机构可信的前提下，这种机制可以有效避免交易所Rug（如FTX）和项目方Rug。除了Ethena列出的Copper、Ceffu、Cobo以外，Sinohope、Fireblocks也提供了类似服务。</p>
+<p>当然，托管机构也存在理论上的作恶可能性，但基于当前CEX仍然占据绝对主导 + 链上安全事件频发的背景下，这种半中心化是一种局部最优解，而非终局形态，但毕竟APY也不是免费的，关键在于为了收益和效率的提升是否应该去承担这些风险。</p>
+<p><strong>3. 利率可持续风险</strong></p>
+<p>USDe需要质押才可以获取收益，由于质押率不会是100%，所以sUSDe的收益率是会高于衍生品费率的，目前合约中质押的USDe约4.7亿美元，质押率仅有23%左右，37.1%名义APY对应的底层资产APY为8.5%左右。</p>
+<p>当前ETH质押收益率约为3%，而过去 3 年平均资金费率约为 6-7%，8.5%的底层资产APY是完全可以持续的，而37.1%的sUSDe APY能否持续还将取决于是否有足够多的应用常见承载USDe，以降低质押率，带来更高收益。</p>
+<p><img src="/categories/Research/bewater-insight-001/650.webp" alt="Image"></p>
+<p><strong>4. 其他风险</strong></p>
+<p>包括合约风险、爆仓及ADL风险、操作风险、交易所风险等。Ethena和Chaos Labs给出了更加详细说明。</p>
+<p><a target="_blank" rel="noopener" href="https://ethena-labs.gitbook.io/ethena-labs/solution-overview/risks">https://ethena-labs.gitbook.io/ethena-labs/solution-overview/risks</a></p>
+
+        </div>
+        
+            <div class="my-5 md:my-10">
+                <div class="mb-4 text-sm font-bold">Written By</div>
+                <div class="flex flex-col gap-5">
+                    
+                        <div class="md:p-5 md:border md:border-solid md:boder-gray-border">
+    <div class="grid md:grid-cols-5 gap-5 text-sm">
+        
+        <div class="md:col-span-3">
+            <div class="flex flex-col gap-2">
+                <div class="flex flex-col gap-[10px] md:gap-5">
+                    <div class="flex flex-col gap-[5px]">
+                        <div>BeWater Giga-Brain</div>
+                         
+                        <div class="flex gap-2">
+                            
+                            <a
+                                class="button hover:current"
+                                href=""
+                            >
+                                LinkedIn</a
+                            >
+                            
+                            <a
+                                class="button hover:current"
+                                href=""
+                            >
+                                X</a
+                            >
+                            
+                            <a
+                                class="button hover:current"
+                                href=""
+                            >
+                                Warpcast</a
+                            >
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    
+                        <div class="md:p-5 md:border md:border-solid md:boder-gray-border">
+    <div class="grid md:grid-cols-5 gap-5 text-sm">
+        
+        <div class="md:col-span-3">
+            <div class="flex flex-col gap-2">
+                <div class="flex flex-col gap-[10px] md:gap-5">
+                    <div class="flex flex-col gap-[5px]">
+                        <div>0xLoki</div>
+                         
+                        <div class="flex gap-2">
+                            
+                            <a
+                                class="button hover:current"
+                                href=""
+                            >
+                                LinkedIn</a
+                            >
+                            
+                            <a
+                                class="button hover:current"
+                                href=""
+                            >
+                                X</a
+                            >
+                            
+                            <a
+                                class="button hover:current"
+                                href=""
+                            >
+                                Warpcast</a
+                            >
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    
+                </div>
+            </div>
+        
+    </div>
+</div></section>
+        <footer class="px-5 py-10 bg-latenight text-gray-300 flex flex-col gap-[60px]">
+    <div class="grid grid-cols-12 gap-y-10">
+        <div class="col-span-12 md:col-span-3 col-start-1">
+            
+        </div>
+        <div class="col-span-12 md:col-start-4 flex flex-col gap-10">
+            <div class="grid md:grid-cols-3 gap-y-2">
+                
+                    <div>
+                        <a target="_blank" rel="noopener" href="https://build.bewater.xyz/campaigns">Campaigns</a>
+                    </div>
+                
+                    <div>
+                        <a target="_blank" rel="noopener" href="https://bewater.xyz/venturestudio">Venture Studio</a>
+                    </div>
+                
+                    <div>
+                        <a href="/">Blog</a>
+                    </div>
+                
+                    <div>
+                        <a target="_blank" rel="noopener" href="https://docs.bewater.xyz/guide/">Docs</a>
+                    </div>
+                
+                    <div>
+                        <a target="_blank" rel="noopener" href="https://build.bewater.xyz/host">Host</a>
+                    </div>
+                
+            </div>
+            <div class="grid md:grid-cols-3 gap-y-2">
+                
+                    <div>
+                        <a target="_blank" rel="noopener" href="https://x.com/bewaterofficial">X</a>
+                    </div>
+                
+                    <div>
+                        <a target="_blank" rel="noopener" href="https://discord.gg/gvsNjn8FbS">Discord</a>
+                    </div>
+                
+                    <div>
+                        <a target="_blank" rel="noopener" href="https://t.me/+J3aIWvxCKvAxZTE1">Telegram</a>
+                    </div>
+                
+                    <div>
+                        <a target="_blank" rel="noopener" href="https://medium.com/@support_25102">Medium</a>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+</body>
+</html>
